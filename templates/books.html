@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{%block title%}
+
+{% endblock%}
+
+
+{%block content%}
+
+
+<div class="container text-center"></div>
+{% for d in books%}
+
+<div class="card text-center" style="width: 18rem;display:inline-block">
+    <img src="{{d.book_image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{d.book_name}}</h5>
+      <p class="card-text">{{d.author_name}}</p>
+      <h6 class="card-text">{{d.year_of_publishing}}</p></h6>
+    </div>
+  </div>
+{% endfor %}
+{% endblock%}

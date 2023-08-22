@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{%block title%}
+signup
+{% endblock%}
+
+
+{%block content%}
+<h1 class="text-center"> Signup Page </h1>
+<hr>
+<div class="container w-50 text-center my-5">
+<form action ="">
+    {{form.as_p}}
+    <button class="btn btn-primary" type="submit">Signup</button>
+</form>
+</div>
+
+{% endblock%}
